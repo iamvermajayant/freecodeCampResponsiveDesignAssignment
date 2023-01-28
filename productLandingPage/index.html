@@ -9,24 +9,74 @@
 </head>
 <body>
     <header id="header">
-        <div class="logo">
-            <img src="images/diljit.jpg" alt="" id="header-img" width="70px" height="70px">
-            <h2>Diljit Dosanjh</h2>
-        </div>
         <nav id="nav-bar">
-            <ul>
-                <li><a href="#features" class="nav-link" >Features</a></li>
-                <li><a href="#HowitWorks" class="nav-link" >How It Works</a></li>
-                <li><a href="#Pricing" class="nav-link" >Pricing</a></li>
+            <div class="header-img">
+                <img src="images/diljit.jpg" alt="" id="header-img" width="70px" height="70px">
+                <h2 id="header-img-title">Diljit Dosanjh</h2>
+            </div>
+            <ul id="nav-bar-link">
+                <li id="nav-bar-items"><a href="#music" class="nav-link">Albums</a></li>
+                <li id="nav-bar-items"><a href="#tour-video" class="nav-link" >Tour Intro</a></li>
+                <li id="nav-bar-items"><a href="#Pricing" class="nav-link" >Pricing</a></li>
             </ul>
         </nav>
     </header>
-    <div class="form">
+    <div class="form-container">
+        <h1 class="form-title">Enter your Name here to get Your Ticket</h1>
         <form id="form" action="https://www.freecodecamp.com/email-submit">
             <input id="email" placeholder="Enter your response here" type="email" name="email" required>
-            <input id="submit" type="submit" value="Get started"> 
+            <input id="submit" type="submit" value="get Ticket"> 
         </form>
     </div>
+    <section id="music">
+        <div class="Music-album-wrapper">
+            <div class="music-album-icon">
+                <img src="images/GOAT.jpg" alt="goat" height="200px" width="200px">
+            </div>
+            <div class="music-album-desc">
+                <h3 class="music-album-title">G.O.A.T</h3>
+                <p class="album-desc">By diljit dosanjh</p>
+            </div>
+        </div>
+        <div class="Music-album-wrapper">
+            <div class="music-album-icon">
+                <img src="images/MOONCHILD ERA.jpeg" alt="goat" height="200px" width="200px">
+            </div>
+            <div class="music-album-desc">
+                <h3 class="music-album-title">MOONCHILD ERA</h3>
+                <p class="album-desc">By diljit dosanjh</p>
+            </div>
+        </div>
+        <div class="Music-album-wrapper">
+            <div class="music-album-icon">
+                <img src="images/DRIVE THRU.jpeg" alt="goat" height="200px" width="200px">
+            </div>
+            <div class="music-album-desc">
+                <h3 class="music-album-title">DRIVE THRU</h3>
+                <p class="album-desc">By diljit dosanjh</p>
+            </div>
+        </div>
+    </section>
+    <section id="tour-video">
+        <iframe id="video" src="https://www.youtube.com/embed/4mlpF_JzvuM?autoplay=1" frameborder="0" width="750px" height="450px"></iframe>
+    </section>
+    <section id="Pricing">
+        <div class="pricing-wrapper">
+            <h4>Premium</h4>
+            <h3><span>&#8377;</span>2000</h3>
+            <input id="submit" name="BOOK" type="submit" value="BOOK NOW">
+        </div>
+        <div class="pricing-wrapper">
+            <h4>Business</h4>
+            <h3><span>&#8377;</span>1000</h3>
+            <input id="submit" name="BOOK" type="submit" value="BOOK NOW">
+        </div>
+        <div class="pricing-wrapper">
+            <h4>General</h4>
+            <h3><span>&#8377;</span>500</h3>
+            <input id="submit" name="BOOK" type="submit" value="BOOK NOW">
+        </div>
+    </section>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" defer></script>
 </body>
 </html>
